@@ -1,18 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>GeoJSon</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-	
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="prueba.js"></script>
-	
-</head>
-<body>
-	<div id="map" style="width: 1080px; height: 720px"></div>
-</body>
+
+<html lang="us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Leaflet & Nominatim test</title>
+    <script src="jquery.min.js"></script>
+    <script src="leaflet.js"></script>
+    <script src="map-nominatim.js"></script>
+    <link href="leaflet.css" rel="stylesheet">
+    <link href="map-nominatim.css" rel="stylesheet">
+  </head>
+  <body>
+    
+
+    <div id="map">
+    </div>
+
+    <div id="search">
+      <input type="text" name="addr" value="" id="addr" size="10" />
+      <button type="button">Search</button>
+      <div id="results"/>
+    </div>
+    <div id="images"></div>
+
+  </body>
 </html>
